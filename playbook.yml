@@ -22,13 +22,13 @@
       copy:
         dest: /var/www/html/index.html
         content: |
-          This is a smaple website testing scenario.
+          This is a sample website testing scenario.
 
     - name: Adding more content at the top
       lineinfile:
         path: /var/www/html/index.html
         insertbefore: BOF
-        line: "Welcome to Testing Group!\n"
+        line: "<h1>Welcome to Testing Group!</h1>"
         state: present
         mode: "0644"
 

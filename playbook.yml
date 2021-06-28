@@ -1,0 +1,8 @@
+- name: Playbook 1
+  hosts: localhost
+  become: true
+  tasks: 
+    - name: install lighttpd
+      package:
+        name: lighttpd
+        state: present
